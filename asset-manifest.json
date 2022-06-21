@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Desafios-React-Coder/static/css/main.b1202057.css",
+    "main.js": "/Desafios-React-Coder/static/js/main.065c895e.js",
+    "static/js/787.ad9273c3.chunk.js": "/Desafios-React-Coder/static/js/787.ad9273c3.chunk.js",
+    "static/media/Nunito-VariableFont_wght.ttf": "/Desafios-React-Coder/static/media/Nunito-VariableFont_wght.ba12192be420666fc588.ttf",
+    "static/media/bodybest_logo.png": "/Desafios-React-Coder/static/media/bodybest_logo.798220678f6eb48d2e4f.png",
+    "index.html": "/Desafios-React-Coder/index.html",
+    "main.b1202057.css.map": "/Desafios-React-Coder/static/css/main.b1202057.css.map",
+    "main.065c895e.js.map": "/Desafios-React-Coder/static/js/main.065c895e.js.map",
+    "787.ad9273c3.chunk.js.map": "/Desafios-React-Coder/static/js/787.ad9273c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1202057.css",
+    "static/js/main.065c895e.js"
+  ]
+}
