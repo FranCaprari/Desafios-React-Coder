@@ -1,0 +1,57 @@
+.nav {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    min-height: 3.75rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding: 0 1rem;
+  }
+  
+  .nav-logo {
+    font-weight: bold;
+    color:red;
+  }
+  .nav-logo img{
+    width: 6rem;
+    padding: 1rem;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    margin: 1rem;
+    position: relative;
+    opacity: 0.9;
+    color: red;
+  }
+  
+  .nav-items {
+    padding-right: 4rem;
+  }
+  
+  .nav-item:hover {
+    opacity: 1;
+  }
+  
+  .nav-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: all 0.4s;
+  }
+  
+  .nav-item:hover::before {
+    width: 100%;
+  }
+  
+  .nav-cart {
+    display: flex;
+    align-items: center;
+  }
+
