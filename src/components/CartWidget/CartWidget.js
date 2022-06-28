@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./CartWidget.css";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const CartWidget = () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import "./style.css";
-import ItemCount from "../ItemCount";
+import "./itemListContainer.css";
+import ItemCount from "../ItemCount/ItemCount";
 
 const onAdd = (cantidad) => {
     console.log(`Agregaste ${cantidad} unidades`)
