@@ -1,5 +1,5 @@
 import React from "react";
-import "./itemListContainer.css";
+import "./ItemListContainer.css";
 import ItemCount from "../ItemCount/ItemCount";
 
 const onAdd = (cantidad) => {
@@ -14,4 +14,4 @@ const itemListContainer = ({greeting}) => {
     );
 }
 
-export default itemListContainer ;
+export default itemListContainer;
