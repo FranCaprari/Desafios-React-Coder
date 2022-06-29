@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "./NavBar.css";
 import bodybest_logo from "../../assets/images/bodybest_logo.png"
-import CartWidget from "../CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
 
 
 const menuItems = [
