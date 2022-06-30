@@ -1,0 +1,43 @@
+.cards{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "prod1 prod2 prod3 prod4"
+                         "prod5 prod6 prod7 prod8" ;
+    text-align: center;
+    padding-bottom: 2rem;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1000px){
+    .cards{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "prod1 prod2"
+                             "prod3 prod4"
+                             "prod5 prod6"
+                             "prod7 prod8";
+        text-align: center;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+    
+}
+
+@media only screen and (max-width: 650px){
+    .cards{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "prod1" 
+                             "prod2"
+                             "prod3" 
+                             "prod4"
+                             "prod5" 
+                             "prod6"
+                             "prod7" 
+                             "prod8";
+        text-align: center;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+    
+}

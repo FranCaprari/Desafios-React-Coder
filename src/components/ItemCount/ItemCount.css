@@ -1,13 +1,8 @@
-.counter{
-    border-style: solid;
-    width: 10%;
-}
-
 
 
 button{
-    color:black;
-    background-color: red;
+    color:white;
+    background-color:red;
     width: fit-content;
     font-size: 1rem;
 }

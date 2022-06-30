@@ -14,8 +14,6 @@ export const ItemCount = ({initial, stock, onAdd}) => {
     }, [initial])
     return (
         <div className="counter">
-                <h3>Producto</h3>
-                <p>Precio</p>
                 <button className="min-btn" onClick={decrease} disabled={count <= 1}>-</button>
                 <span>{count}</span>
                 <button className="add-btn" onClick={increase} disabled={count >= stock}>+</button>
