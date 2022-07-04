@@ -1,8 +1,15 @@
 
 
 button{
+    width: 100%;
+    height: 40px;
+    border-radius: 1rem;
     color:white;
     background-color:red;
     width: fit-content;
     font-size: 1rem;
+}
+
+button:hover{
+    cursor: pointer;
 }

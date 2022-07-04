@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./ItemListContainer.css";
-import ItemCount from "../ItemCount/ItemCount";
-import { getData } from "../../mocks/apiFake";
+import { getProds } from "../../mocks/apiFake";
 import ItemList from "../ItemList/ItemList"
+import { useParams } from "react-router-dom";
+import { SpinnerCircular } from "spinners-react";
 
 const onAdd = (cantidad) => {
     console.log(`Agregaste ${cantidad} unidades`)
@@ -11,16 +12,16 @@ const onAdd = (cantidad) => {
 const ItemListContainer = ({greeting}) => {
     const [productList, setProductList] = useState([]);
     const [loading, setLoading] = useState(true);
+    const {categoryId} = useParams();
     useEffect(() => {
-        getData
+        getProds(categoryId)
         .then((result) => setProductList(result))
         .catch((error)=> console.log(error))
         .finally(() => setLoading(false))
-    }, [])
+    }, [categoryId])
     return (
         <div className="landing"> <span>{greeting}</span>
-        <ItemCount initial={1} stock={5} onAdd={onAdd}/>
-        {loading ? <img src="https://c.tenor.com/cmI9GdrU9DsAAAAC/popeye-biceps-popeye-the-sailor-man.gif"></img> : <ItemList productList={productList} />}
+        {loading ? <SpinnerCircular /> : <ItemList productList={productList} />}
          </div>
     );
 }
