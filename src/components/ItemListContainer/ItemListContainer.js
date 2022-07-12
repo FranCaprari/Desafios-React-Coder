@@ -5,9 +5,7 @@ import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom";
 import { SpinnerCircular } from "spinners-react";
 
-const onAdd = (cantidad) => {
-    console.log(`Agregaste ${cantidad} unidades`)
-}
+
 
 const ItemListContainer = ({greeting}) => {
     const [productList, setProductList] = useState([]);
