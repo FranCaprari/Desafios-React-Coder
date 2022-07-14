@@ -18,7 +18,12 @@
     display: inline-block;
     cursor: pointer;
   }
-  
+  .cart-cantidad {
+    margin-top: 0.5rem;
+    color: red;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
   @media (max-width: 768px) {
     .button {
       top: 0.7rem;
