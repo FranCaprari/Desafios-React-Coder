@@ -1,0 +1,19 @@
+.itemCart{
+    display: flex;
+    padding-top:2rem;
+    max-width: 400px;
+}
+
+.itemcart-img{
+    height: 50%;
+    width: 200px;
+
+}
+
+.itemcart-btn{
+    width: 80%;
+}
+
+.itemcart-text{
+    padding-left: 2rem;
+}

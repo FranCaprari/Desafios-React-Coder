@@ -1,0 +1,16 @@
+.carritovacio{
+    text-align: center;
+    font-size:200%;
+}
+
+.cart{
+    text-align: center;
+    justify-content: center;
+}
+
+.totalprice{
+    text-align: end;
+    padding-right: 5rem;
+    font-weight: bold;
+    font-size: large;
+}
