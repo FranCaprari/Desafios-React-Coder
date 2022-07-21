@@ -15,9 +15,9 @@ const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
       <div className="nav">
-        <a href="/">
+        <Link to="/">
           <span className="nav-logo"><img src={bodybest_logo} alt='logo bodybest'></img></span>
-        </a>
+        </Link>
         <div className={`nav-items ${isOpen ? "open" : ""}`.trim()}>
           {menuItems.map((item) => (
             <Link to={item.path} key={item.id} className="nav-item">{item.label}</Link>

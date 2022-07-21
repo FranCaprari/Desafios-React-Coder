@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetail from "../ItemDetail/ItemDetail";
-import { getProd } from "../../mocks/apiFake"
 import { SpinnerCircular } from 'spinners-react/lib/esm/SpinnerCircular';
+import {getFirestore, doc, getDoc} from 'firebase/firestore';
 
 
 const ItemDetailContainer = () => {
@@ -13,16 +13,16 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         setLoading(true);
-        getProd(id)
-            .then((res) => {
-                setProduct(res);
-            })
-            .catch((error) => {
+        const db = getFirestore();
+        const queryDoc = doc(db, 'products', id);
+        getDoc(queryDoc)
+            .then(result => setProduct({id: result.id, ...result.data()}))
+            .catch((error) =>{
                 console.log(error);
             })
-            .finally(() => {
-                setLoading(false);
-            }); 
+            .finally(() =>{
+                setLoading(false)
+            });
     }, [id]);
 
     return (
