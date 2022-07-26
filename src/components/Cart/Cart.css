@@ -7,10 +7,14 @@
     text-align: center;
     justify-content: center;
 }
-
+.final{
+    text-align: center;
+}
 .totalprice{
-    text-align: end;
-    padding-right: 5rem;
     font-weight: bold;
     font-size: large;
+}
+
+.gen-btn{
+    text-align: center;
 }
