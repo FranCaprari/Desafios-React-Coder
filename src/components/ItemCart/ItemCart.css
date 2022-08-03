@@ -5,8 +5,8 @@
 }
 
 .itemcart-img{
-    height: 50%;
-    width: 200px;
+    height: 150px;
+    width: 100px;
 
 }
 
@@ -15,5 +15,6 @@
 }
 
 .itemcart-text{
-    padding-left: 2rem;
+    padding-left: 1rem;
+    width: 200px;
 }
