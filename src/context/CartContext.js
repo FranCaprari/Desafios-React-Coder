@@ -1,10 +1,10 @@
 import React, {useContext, useState} from 'react';
-
+import { useLocalStorage } from '../components/useLocalStorage/useLocalStorage'
 const CartContext = React.createContext([]);
 
 export const useCartContext = () => useContext(CartContext);
 const CartProvider = ({children}) => {
-    const [cart, setCart] = useState([]);
+    const [cart, setCart] = useLocalStorage("cart", []);
 
     const addProduct = (item, quantity) =>{
         let newCart;

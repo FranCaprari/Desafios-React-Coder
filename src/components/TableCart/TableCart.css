@@ -1,0 +1,11 @@
+table{
+    text-align: left;
+    border:solid;
+    margin: auto;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+thead{
+    background-color: rgb(182, 182, 182);
+}
+

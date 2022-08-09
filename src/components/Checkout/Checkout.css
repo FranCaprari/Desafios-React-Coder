@@ -1,0 +1,43 @@
+
+.card-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.card-form input{
+    width: 30%;
+}
+
+.resumen-text{
+    text-align: center;
+}
+label{
+    font-size:1.2rem;
+}
+input{
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1.5;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 0.1rem solid;
+    border-radius: 1rem;
+}
+
+.errors{
+    font-weight: bold;
+    color:red;
+    padding-bottom: 1rem;
+}
+.btnPagar{
+    text-align: center;
+}
+.btnPagar:hover{
+    cursor: pointer;
+}

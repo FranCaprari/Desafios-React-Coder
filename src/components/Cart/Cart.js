@@ -41,9 +41,8 @@ const Cart = () => {
             </div>
             <div className='final'>
                 <p className='totalprice'>Total: ${totalPrice()}</p>
-                <button onClick={handleClick} className='gen-btn'>Generar compra</button>
-                <Link to="/"><button>Ver más productos</button></Link>
-                <button>Abonar con mercado pago</button>
+                <Link to="/" ><button >Ver más productos</button></Link>
+                <Link to="/checkout"><button className='gen-btn' >Finalizar compra</button></Link>
             </div>
         </div>
     )
