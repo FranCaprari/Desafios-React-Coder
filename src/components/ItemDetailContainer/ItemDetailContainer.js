@@ -26,7 +26,7 @@ const ItemDetailContainer = () => {
     }, [id]);
 
     return (
-        <div>
+        <div className="all-details">
             {loading ? (
                 <SpinnerCircular />
             ) : (

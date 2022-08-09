@@ -7,7 +7,7 @@ import { getFirestore, collection, where, query, getDocs } from "firebase/firest
 
 
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
     const [productList, setProductList] = useState([]);
     const [loading, setLoading] = useState(true);
     const {categoryId} = useParams();
@@ -28,7 +28,7 @@ const ItemListContainer = ({greeting}) => {
         }
     }, [categoryId])
     return (
-        <div className="landing"> <span>{greeting}</span>
+        <div className="landing"> 
         {loading ? <SpinnerCircular /> : <ItemList productList={productList} />}
          </div>
     );
